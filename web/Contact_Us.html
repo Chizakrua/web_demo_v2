@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>與「村」同樂</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="icon" href="../images/web-icon.ico" type="images/x-icon">
+</head>
+
+  <main>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">與「村」同樂</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">首頁</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Room_Types.html">房型介紹</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Tour_Plan.html">行程安排</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Local_Attractions.html">周邊設施</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">聯絡我們</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+    <div class="alert alert-success alert-dismissible fade show d-none" id="submitAlert" role="alert">
+      感謝您的聯絡，請多注意電子郵件，我們將會在1~3工作日回應您。
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="row" style="margin-top: 55px;">
+      <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+        <div id="icon"></div>
+      </div>
+
+      <div id="about_text" class="col-12 col-lg-6">
+        <h3>| 關於我們</h3>
+        <p>本民宿宗旨，建立一個<a style="font-weight: bolder;">安全、方便、好玩</a>的居住環境</p>
+        <p>並與當地建立深厚聯繫，保護環境與提倡有機食材。</p>
+        <h3>| 聯絡方式</h3>
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <p>Line：@staywithvillage</p>
+            <p>Email：<a id="mail_link" href="mailto:admin@staywithvillage">admin@staywithvillage</a></p>
+          </div>
+
+          <div class="col-12 col-lg-7">
+            <a href="http://line.me" target="_blank">
+              <img src="../images/line-qr.png" style="width: 100px; height: 100px; margin-top: 5px;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="hr_zone">
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="col-12 col-lg-3 d-flex justify-content-center justify-content-lg-end">
+        <h3 id="room_title">| 訂房諮詢</h3>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <form id="myForm" class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">姓</label>
+          <input type="text" class="form-control" id="validationCustom01" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">名</label>
+          <input type="text" class="form-control" id="validationCustom02" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">聯絡郵件</label>
+          <div class="input-group has-validation">
+            <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              請輸入有效的電子郵件
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">房型</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">請選擇房型</option>
+            <option value="1">四人房</option>
+            <option value="2">雙人房</option>
+            <option value="3">親子主題雙人房</option>
+          </select>
+          <div class="invalid-feedback">
+            請選擇房間
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              同意<a id="privacy_link" href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">隱私權條款</a>
+            </label>
+            <div class="invalid-feedback">
+              請先同意條款
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary btn-submit" type="submit">送出</button>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="privacyModalLabel">隱私權條款</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="關閉"></button>
+          </div>
+          <div class="modal-body">
+            <p>此網頁為測試用途，我們僅會收集必要的 Cookie 資訊與連線 IP 位置，用於基本網站運作與安全目的。</p>
+            <p>除了上述必要資訊外，本站不會主動收集使用者的其他個人資訊。</p>
+            <p>使用本網站即表示您了解並同意此條款。若您不同意，請勿繼續使用本網站。</p>
+            <p>若有任何疑問，歡迎透過聯絡資訊與我們聯繫。</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright © 與「村」同樂管理委員會. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/bootstrap.js"></script>
+  <script src="../js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+#banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.287),rgba(0, 0, 0, 0.731)), url(../images/plan_banner.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 812px;
+}
+
+#banner h1{
+    text-shadow: 1px 1px 5px #000000a9;
+}
+
+#banner > .row{
+    height: 812px;
+}
+
+#content{
+    background-color: #4b4b4bde;
+}
+
+#content h4{
+    color: bisque;
+}
+
+.row .col-lg:nth-child(1){
+    background-color: rgba(51, 51, 51, 0.035);
+}
+.row .col-lg:nth-child(2){
+    background-color: rgba(51, 51, 51, 0.07);
+}
+.row .col-lg:nth-child(4){
+    background-color: rgba(51, 51, 51, 0.105);
+}
+.row .col-lg:nth-child(5){
+    background-color: rgba(51, 51, 51, 0.14);
+}

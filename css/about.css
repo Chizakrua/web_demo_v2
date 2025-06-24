@@ -1,0 +1,107 @@
+html,body{
+    overflow-x: hidden;
+}
+
+#icon{
+    background-image: url(../images/web-icon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    
+}
+
+#about_text{
+    margin-top: 50px;
+
+}
+
+#about_text h3{
+    color: rgb(255, 191, 114);
+    text-shadow: 1px 1px 5px #90909099;
+    font-weight: 400;
+}
+
+#about_text p{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#about_text a{
+    text-decoration: none;
+}
+
+.hr_zone{
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.hr_zone hr{
+    margin: 0 auto;
+    width: 65%;
+    border: 2px solid #0f0f0f88;
+}
+
+#mail_link{
+    transition: 400ms;
+    color: rgb(255, 208, 150);
+    font-weight: 400;
+}
+
+#mail_link:hover{
+    transition: 500ms;
+    color: rgb(255, 194, 119);
+    text-shadow: 2px 2px 8px rgba(182, 135, 77, 0.689);
+}
+
+#room_title{
+    color: rgb(255, 191, 114);
+    text-shadow: 1px 1px 5px #90909099;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#form_zone{
+    align-items: center;
+    width: 60%;
+}
+
+#alertPlaceholder{
+    position: fixed; 
+    top: 56px; 
+    left: 0;
+    width: 100%; 
+    z-index: 1050;
+    margin-bottom: 100px;
+}
+
+#privacy_link{
+    transition: 400ms;
+    color: rgb(255, 208, 150);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#privacy_link:hover{
+    transition: 500ms;
+    color: rgb(255, 194, 119);
+    text-shadow: 2px 2px 8px rgba(182, 135, 77, 0.689);
+}
+
+#privacy_link:visited{
+    color: rgb(186, 139, 82);
+     text-shadow: 2px 2px 8px rgba(182, 131, 69, 0.689);
+}
+
+#submitAlert{
+    margin-top: 50px;
+}
+
+.btn-submit{
+    margin-bottom: 15px;
+}

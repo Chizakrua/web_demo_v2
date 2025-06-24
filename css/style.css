@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Microsoft JhengHei;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar-brand{
+    transition: 400ms;
+}
+
+.navbar-brand:hover{
+    transition: 600ms;
+    color: bisque !important;
+    text-shadow: 2px 2px 8px rgba(255, 232, 205, 0.699);
+}
+
+.nav-link{
+    transition: 500ms;
+    color: rgba(255, 255, 255, 0.699) !important;
+}
+
+.nav-link:hover{
+    transition: 500ms;
+    color: beige !important;
+    text-shadow: 1px 1px 5px rgba(255, 214, 164, 0.664);
+    cursor: pointer;
+}
+
+.nav-link.active{
+    color: bisque !important;
+    cursor: no-drop;
+}
+
+.btn_sytle{
+    transition: 350ms;
+    width: 150px;
+    height: 50px;
+    background-color: bisque;
+    border-radius: 13px;
+    border: none;
+    display: block;
+    color: rgba(0, 0, 0, 0.664);
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn_sytle:hover{
+    color: black;
+    font-weight: 500;
+    transition: 650ms;
+    background-color: rgb(250, 197, 132);
+    box-shadow: 10px 10px 5px #3d3d3d65;
+}
+
+
+#zone_A, #zone_B, #zone_C {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#zone_A{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .4)),url(../images/A.jpg);
+}
+
+#zone_B{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, .4)),url(../images/B.jpg);
+}
+
+#zone_C{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .4)),url(../images/C.jpg);
+}
+
+#room_zone {
+    width: 100%;
+    padding: 0 5px;
+}
+
+
+footer{
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    padding: 10px 0;
+}
+
+footer p{
+    color: white;
+    line-height: 30px;
+}
